@@ -10,7 +10,7 @@ export default function Navbar({navBackground}) {
     <Container navBackground={navBackground}>
         <div className="search__bar">
             <FaSearch />
-            <input type="text" placeholder='Artists, songs, or podcasts' />
+            <input type="text" placeholder='Artists, songs, or podcasts' name="searchBar"/>
         </div>
         <div className="avatar">
             <a href="#">
