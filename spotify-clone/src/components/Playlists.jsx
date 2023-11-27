@@ -23,19 +23,19 @@ export default function Playlists() {
         };
         getPlaylistData();
     },[token, dispatch]);
-  return (
-    <Container>
-        <ul>
-            {
-                playlists.map(({ name, id }) => {
-                    return (
-                        <li key={id}>{name}</li>
-                    )
-                })
-            }
-        </ul>
-    </Container>
-  )
+    return (
+        <Container>
+            <ul>
+                {
+                    playlists.map(({ name, id }) => {
+                        return (
+                            <li key={id}>{name}</li>
+                        )
+                    })
+                }
+            </ul>
+        </Container>
+    )
 }
 
 const Container = styled.div`
