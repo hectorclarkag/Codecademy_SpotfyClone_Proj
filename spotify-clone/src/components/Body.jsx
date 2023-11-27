@@ -76,6 +76,7 @@ export default function Body({headerBackground}) {
                   <span><AiFillClockCircle /></span>
                 </div>
               </div>
+              <div className="hr"></div>
             </div>
             <div className="tracks">
               {selectedPlaylist.tracks.map(({
@@ -145,7 +146,8 @@ const Container = styled.div`
   .list {
     .header__row {
       display: grid;
-      grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
+      grid-template-columns: 0.3fr 3fr 1.85fr 0.1fr;
+      // border-bottom: 0.1rem solid rgba(0, 0, 0, 0.7); 
       color: #dddcdc;
       margin: 1rem 0 0 0;
       position: sticky;
@@ -153,6 +155,11 @@ const Container = styled.div`
       padding: 1rem 3rem;
       transition: 0.3s ease-in-out;
       background-color: ${({ headerBackground }) => headerBackground ? "#000000dc" : "none"};
+    }
+    .hr {
+      height: 0.1rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      margin: 0px 30px 10px 30px;
     }
   }
   .tracks {
